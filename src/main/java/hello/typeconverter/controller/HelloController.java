@@ -8,6 +8,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
+
+//    spring autoConverts types for
+//    1. @ModelAttribute , @PathVariable , @RequestParam
+//    2. @Value for YML
+//    3. XML spring beans
+//    4. rendering views
+
+//    but for the other instances, how?
+//    refer to converter package (IntegerToString specifically)
     @GetMapping("/hello-v1")
     public String helloV1(HttpServletRequest request) {
         String data = request.getParameter("data"); //문자 타입 조회
