@@ -12,7 +12,7 @@ class MyNumberFormatterTest {
     @Test
     void parse() throws ParseException {
         Number result = formatter.parse("1,000", Locale.KOREA);
-        assertThat(result).isEqualTo(1000L); //Long 타입 주의
+        assertThat(result).isEqualTo(1000L); //Long 타입 주의 --> not too sure why Integer is not considered
     }
     @Test
     void print() {

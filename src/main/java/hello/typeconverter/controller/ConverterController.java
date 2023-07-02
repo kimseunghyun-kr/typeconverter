@@ -31,7 +31,7 @@ public class ConverterController {
 //    for the Post /converter/edit it is the @ModelAttribute calling the Converter,
 //    while for the Get /converter/edit it is the th:field that applies the conversion service
 
-//    we will now move on to formatters
+//    we will now move on to formatters (formatterController)
     @GetMapping("/converter/edit")
     public String converterForm(Model model) {
         IpPort ipPort = new IpPort("127.0.0.1", 8080);
